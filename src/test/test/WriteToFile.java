@@ -5,7 +5,7 @@ import java.io.IOException;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
  
-public class Test {
+public class WriteToFile {
      public static void main(String[] args) {
 
 	JSONObject obj = new JSONObject();

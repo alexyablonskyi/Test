@@ -1,1 +1,9 @@
-{"name":"Alex","options":["NBA","Maimi","Heat"],"age":"28"}
+{
+    "Name": "crunchify.com",
+    "Author": "App Shah",
+    "Company List": [
+        "Compnay: eBay",
+        "Compnay: Paypal",
+        "Compnay: Google"
+    ]
+}

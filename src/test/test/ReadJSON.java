@@ -1,26 +1,39 @@
 package test.test;
-import java.io.FileNotFoundException;
+
 import java.io.FileReader;
-import java.io.IOException;
 import java.util.Iterator;
+ 
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
-import org.json.simple.parser.ParseException;
-
 
 public class ReadJSON {
-	public static void main(String[] args) throws Exception, IOException, ParseException {
+ 
+    @SuppressWarnings("unchecked")
+    public static void main(String[] args) {
         JSONParser parser = new JSONParser();
-            Object obj = parser.parse(new FileReader("C:/Users/oyablonskyi/workspace/Test/test.json"));
+ 
+        try {
+ 
+            Object obj = parser.parse(new FileReader(
+                    "C:\\Users\\oyablonskyi\\workspace\\Test\\test.json"));
+ 
             JSONObject jsonObject = (JSONObject) obj;
-            String name = (String) jsonObject.get("name");
-            System.out.println(name);
-            if(name.equals("Alex")){
-            	System.out.println("True");
-            } else {
-            	System.out.println("False");
+ 
+            String name = (String) jsonObject.get("Name");
+            String author = (String) jsonObject.get("Author");
+            JSONArray companyList = (JSONArray) jsonObject.get("Company List");
+ 
+            System.out.println("Name: " + name);
+            System.out.println("Author: " + author);
+            System.out.println("\nCompany List:");
+            Iterator<String> iterator = companyList.iterator();
+            while (iterator.hasNext()) {
+                System.out.println(iterator.next());
             }
-       
+ 
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 }
