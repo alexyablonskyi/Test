@@ -5,5 +5,6 @@
 	<classpathentry kind="lib" path="C:/Users/oyablonskyi/workspace/Test/json-20141113.jar"/>
 	<classpathentry kind="lib" path="C:/Users/oyablonskyi/workspace/Test/apache-httpcomponents-httpclient.jar"/>
 	<classpathentry kind="con" path="org.testng.TESTNG_CONTAINER"/>
+	<classpathentry kind="lib" path="C:/Users/oyablonskyi/workspace/Test/json-simple-1.1.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

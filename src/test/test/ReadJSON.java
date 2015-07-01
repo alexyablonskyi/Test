@@ -22,16 +22,17 @@ public class ReadJSON {
  
             String name = (String) jsonObject.get("Name");
             String author = (String) jsonObject.get("Author");
-            JSONArray companyList = (JSONArray) jsonObject.get("Company List");
+            
+            //JSONArray companyList = (JSONArray) jsonObject.get("Company List");
  
             System.out.println("Name: " + name);
             System.out.println("Author: " + author);
-            System.out.println("\nCompany List:");
+            /*System.out.println("\nCompany List:");
             Iterator<String> iterator = companyList.iterator();
             while (iterator.hasNext()) {
                 System.out.println(iterator.next());
             }
- 
+ */
         } catch (Exception e) {
             e.printStackTrace();
         }
