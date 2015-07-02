@@ -1,4 +1,4 @@
-package test.test;
+package json;
 
 import java.io.FileWriter;
 import java.io.IOException;
